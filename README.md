@@ -1,2 +1,5 @@
 # WEB-Faculdade
-Trabalho da Faculdade sobre Desenvolvimento WEB
+
+## 💻 Tecnologias utilizadas no projeto
+- HTML
+- CSS
