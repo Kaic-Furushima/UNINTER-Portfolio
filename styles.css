@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a, nav p {
+    text-decoration: none;
+    color: rgb(255, 255, 255);  
+    font-size: large;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(135deg, #1a001a, #330066, #6600cc);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
