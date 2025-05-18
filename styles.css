@@ -121,10 +121,8 @@ footer a {
 
 /* ==================== SEÇÃO SOBRE ==================== */
 #sobre {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    width: 100%;
     padding: 8rem 2rem 8rem 2rem;
     background: linear-gradient(135deg, #2a0033, #4b0082);
 }
@@ -165,6 +163,7 @@ footer a {
     width: 50%;  
 }
 
+/*  SUBSEÇÃO IDIOMAS  */
 #idiomas {
     grid-column: 1/4;
     grid-row: 4;
