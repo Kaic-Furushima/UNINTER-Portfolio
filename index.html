@@ -20,6 +20,7 @@
             </ul>
         </div>
     </nav>
+
     <section id="sobre" class="grid-container">
         <div class="titulo-central"><h1>Quem sou eu?</h1></div>
         <img src="Kaic.jpeg" alt="Foto do Kaic" class="foto" id="kaic">
@@ -38,6 +39,7 @@
             </ul>
         </div>
     </section>
+
     <section id="formacao" class="grid-container">
         <h1 class="titulo-central">Formação Acadêmica</h1>
         <img src="uninter.png" alt="Logo da Uninter" class="foto" id="uninter">
@@ -52,7 +54,8 @@
             <li>Espanhol - Intermediário</li>
         </ul>
         </section>
-    </section>>
+    </section>
+
     <section id="portfolio" class="grid-container">
         <h1 class="titulo-central">Portfólio</h1>
         <section style="grid-column: 1; grid-row: 2;">        
@@ -64,7 +67,7 @@
             <h1>Medicina Virtual</h1>
             <a href="https://github.com/Kaic-Furushima/Medicina-Virtual" target="_blank"><img src="medicinavirtual.png" alt="Logo do Medicina Virtual" class="foto" id="medicina-virtual"></a>
             <a href="https://github.com/Kaic-Furushima/Medicina-Virtual" target="_blank">github.com/Kaic-Furushima/Medicina-Virtual</a>
-            <p>Trata-se do meu projeto de TCC. Consiste no desenvolvimento de um Website utilizando HTML, CSS, JS, Bootstrap 5 e Firebase para servir como um meio de interface para um dispositivo, com base em microcontrolador, capaz medir os sinais vitais de um paciente</p>
+            <p>Trata-se do meu projeto de TCC no IFSP. Consiste no desenvolvimento de um Website utilizando HTML, CSS, JS, Bootstrap 5 e Firebase para servir como um meio de interface para um dispositivo, com base em microcontrolador, capaz medir os sinais vitais de um paciente</p>
         </section>
         <section style="grid-column: 3; grid-row: 2;">
             <h1>GitHub</h1>
@@ -72,9 +75,28 @@
             <a href="https://github.com/Kaic-Furushima" target="_blank">github.com/Kaic-Furushima</a>
         </section>
     </section>
+
     <section id="contato" class="grid-container">
+        <h1 class="titulo-central">Entre em Contato</h1>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
 
     </section>
+
+    <footer>
+        <p>© 2025 Kaic Furushima. Todos os direitos reservados.</p>
+        <a href="#sobre">Voltar ao topo</a>
+    </footer>
     
 </body>
 </html>
