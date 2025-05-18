@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Portfólio do Kaic</title>
+    <link rel="icon" href="user.ico">
 </head>
 <body>
+    <!-- Barra de Navegação (Fixa) -->
     <nav>
+        <!-- Título da Navbar -->
         <div>
-            <p>Portfólio</p>
+            <p>Portfólio do Kaic</p>
         </div>
+        <!-- Links da Navbar -->
         <div>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
@@ -21,14 +25,20 @@
         </div>
     </nav>
 
-    <section id="sobre" class="grid-container">
-        <div class="titulo-central"><h1>Quem sou eu?</h1></div>
-        <img src="Kaic.jpeg" alt="Foto do Kaic" class="foto" id="kaic">
-        <div class="vida-pessoal">
+    <!-- Sobre -->
+    <section id="sobre" class="section-principal">
+        <h1 class="titulo-central">Quem sou eu?</h1> <!-- Título -->
+
+        <img src="Kaic.jpeg" alt="Foto do Kaic" class="foto" id="img-kaic"> <!-- Imagem no centro da Grid -->
+
+        <!-- Texto no lado esquerdo -->
+        <div id="vida-pessoal" class="texto-geral"> 
             <h1>Minha Vida Pessoal</h1>
             <p>Sou um jovem de 19 anos, atualmente estudando Ciência da Computação. Gosto muito da computação em geral, com foco na programação. Atualmente me interesso pelas áreas de Análise de Dados e Desenvolvimento de Software, porém, adoraria me aventurar em qualquer área da Computação. Hoje em dia trabalho como aprendiz em TI</p>
         </div>
-        <div class="gostos">
+
+        <!-- Texto no lado direito -->
+        <div id="gostos" class="texto-geral">
             <h1>Gostos</h1>
             <ul>
                 <li>Ler livros de Ficção</li>
@@ -40,59 +50,82 @@
         </div>
     </section>
 
-    <section id="formacao" class="grid-container">
-        <h1 class="titulo-central">Formação Acadêmica</h1>
-        <img src="uninter.png" alt="Logo da Uninter" class="foto" id="uninter">
-        <img src="ifsp.png" alt="Logo do IFSP" class="foto" id="ifsp">
-        <p id="texto-uninter">Bacharelado em Ciência da Computação (2024-2028)</p>
-        <p id="texto-ifsp">Curso Técnico de Automação Industrial Integrado ao Ensino Médio (2021-2023)</p>
-        <section id="idiomas">        
-        <h1>Idiomas</h1>
-        <ul>
-            <li>Português - Nativo</li>
-            <li>Inglês - Avançado</li>
-            <li>Espanhol - Intermediário</li>
-        </ul>
+    <!-- Formação -->
+    <section id="formacao" class="section-principal">
+        <h1 class="titulo-central">Formação Acadêmica</h1> <!-- Título -->
+
+        <!-- Logo das minhas formações -->
+        <img src="uninter.png" alt="Logo da Uninter" class="foto" id="logo-uninter">
+        <img src="ifsp.png" alt="Logo do IFSP" class="foto" id="logo-ifsp">
+        
+        <!-- Curso da formação -->
+        <p class="texto-geral" style="grid-column: 3; grid-row: 3;">Bacharelado em Ciência da Computação (2024-2028)</p>
+        <p class="texto-geral" style="grid-column: 1; grid-row: 3;">Curso Técnico em Automação Industrial Integrado ao Ensino Médio (2021-2023)</p>
+
+        <!-- Subseção para idiomas-->
+        <section id="idiomas" class="texto-geral">        
+            <h1 style="padding-bottom: 1rem;">Idiomas</h1>
+            <ul>
+                <li><img src="BRAZIL.png" alt="Bandeira do Brasil" class="bandeira"> Português - Nativo</li>
+                <li><img src="EUA.png" alt="Bandeira dos Estados Unidos" class="bandeira"> Inglês - Avançado</li>
+                <li><img src="ESPANHA.png" alt="Bandeira da Espanha" class="bandeira"> Espanhol - Intermediário</li>
+            </ul>
         </section>
     </section>
 
-    <section id="portfolio" class="grid-container">
-        <h1 class="titulo-central">Portfólio</h1>
-        <section style="grid-column: 1; grid-row: 2;">        
+    <!-- Portfólio -->
+    <section id="portfolio" class="section-principal">
+        <h1 class="titulo-central">Portfólio</h1> <!-- Título -->
+
+        <!-- 1° - Linkedin -->
+        <section style="grid-column: 1; grid-row: 2;" class="texto-geral">        
             <h1>Linkedin</h1>
             <a href="https://www.linkedin.com/in/kaic-furushima" target="_blank"><img src="linkedin.png" alt="Logo do Linkedin" class="foto"></a>
             <a href="https://www.linkedin.com/in/kaic-furushima" target="_blank">linkedin.com/in/kaic-furushima</a>
         </section>
-        <section style="grid-column: 2; grid-row: 2;">
+
+        <!-- 2° - Medicina Virtual -->
+        <section style="grid-column: 2; grid-row: 2;" class="texto-geral" id="medicina-virtual">
             <h1>Medicina Virtual</h1>
-            <a href="https://github.com/Kaic-Furushima/Medicina-Virtual" target="_blank"><img src="medicinavirtual.png" alt="Logo do Medicina Virtual" class="foto" id="medicina-virtual"></a>
+            <a href="https://github.com/Kaic-Furushima/Medicina-Virtual" target="_blank"><img src="medicinavirtual.png" alt="Logo do Medicina Virtual" class="foto" style="width: 70%;"></a>
             <a href="https://github.com/Kaic-Furushima/Medicina-Virtual" target="_blank">github.com/Kaic-Furushima/Medicina-Virtual</a>
             <p>Trata-se do meu projeto de TCC no IFSP. Consiste no desenvolvimento de um Website utilizando HTML, CSS, JS, Bootstrap 5 e Firebase para servir como um meio de interface para um dispositivo, com base em microcontrolador, capaz medir os sinais vitais de um paciente</p>
         </section>
-        <section style="grid-column: 3; grid-row: 2;">
+
+        <!-- 3° - Github -->
+        <section style="grid-column: 3; grid-row: 2;" class="texto-geral">
             <h1>GitHub</h1>
             <a href="https://github.com/Kaic-Furushima" target="_blank"><img src="github.png" alt="Logo do GitHub" class="foto"></a>
             <a href="https://github.com/Kaic-Furushima" target="_blank">github.com/Kaic-Furushima</a>
         </section>
     </section>
 
-    <section id="contato" class="grid-container">
-        <h1 class="titulo-central">Entre em Contato</h1>
+    <!-- Contato -->
+    <section id="contato" class="section-principal">
+        <h1 class="titulo-central">Entre em Contato</h1> <!-- Título -->
+
+        <!-- Formulário de Contato-->
         <form>
+
+            <!-- Input para Nome -->
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
 
+            <!-- Input para Email -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
+            <!-- Input para Mensagem -->
             <label for="mensagem">Mensagem:</label>
             <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
+            <!-- Botão para Envio -->
             <button type="submit">Enviar</button>
         </form>
 
     </section>
 
+    <!-- Rodapé -->
     <footer>
         <p>© 2025 Kaic Furushima. Todos os direitos reservados.</p>
         <a href="#sobre">Voltar ao topo</a>
